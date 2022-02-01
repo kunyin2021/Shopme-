@@ -7,8 +7,8 @@
 			fileSize = this.files[0].size;
 			
 			
-			if(fileSize > 1048576) {
-				this.setCustomValidity("You must chosse an imge less than 1MB");
+			if(fileSize > 102400) {
+				this.setCustomValidity("You must chosse an imge less than 100KB");
 				this.reportValidity();
 			} else {
 				this.setCustomValidity("");
@@ -28,5 +28,23 @@
 		
 		reader.readAsDataURL(file);
 	}
+	
+	
+
+	function showModalDialog(title, message) {
+		$("#modalTitle").text(title);
+		$("#modalBody").text(message);
+		$("#modalDialog").modal();
+	}
+	
+	function showErrorModal(message) {
+		showModalDialog("Error", message);
+	}
+	
+	function showWarningModal(message) {
+		showModalDialog("Warning", message);
+	}
+	
+	
 	
 		
