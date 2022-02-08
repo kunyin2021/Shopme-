@@ -7,8 +7,8 @@
 			fileSize = this.files[0].size;
 			
 			
-			if(fileSize > 102400) {
-				this.setCustomValidity("You must chosse an imge less than 100KB");
+			if(fileSize > MAX_FILE_SIZE) {
+				this.setCustomValidity("You must chosse an imge less than " + MAX_FILE_SIZE + " bytes !");
 				this.reportValidity();
 			} else {
 				this.setCustomValidity("");

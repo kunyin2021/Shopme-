@@ -60,8 +60,6 @@ public class CategoryServiceTests {
 		String name = "NameABC";
 		String alias = "computers";
 		
-		Category category = new Category(id, name, alias);
-		
 		Mockito.when(repo.findByName(name)).thenReturn(null);
 		Mockito.when(repo.findByAlias(alias)).thenReturn(null);
 		
