@@ -1,0 +1,40 @@
+#
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Committer: kunyin888 <kunyin888@kunyin888s-iMac.local>
+#
+# On branch main
+# Your branch is up to date with 'origin/main'.
+#
+# Changes to be committed:
+#	new file:   ShopmeCommon/src/main/java/com/shopme/common/entity/Country.java
+#	new file:   ShopmeCommon/src/main/java/com/shopme/common/entity/State.java
+#	modified:   ShopmeWebParent/ShopmeBackEnd/pom.xml
+#	modified:   ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/security/WebSecurityConfig.java
+#	new file:   ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/setting/country/CountryRepository.java
+#	new file:   ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/setting/country/CountryRestController.java
+#	new file:   ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/setting/state/StateDTO.java
+#	new file:   ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/setting/state/StateRepository.java
+#	new file:   ShopmeWebParent/ShopmeBackEnd/src/main/java/com/shopme/admin/setting/state/StateRestController.java
+#	modified:   ShopmeWebParent/ShopmeBackEnd/src/main/resources/static/js/common.js
+#	new file:   ShopmeWebParent/ShopmeBackEnd/src/main/resources/static/js/countries_setting.js
+#	new file:   ShopmeWebParent/ShopmeBackEnd/src/main/resources/static/js/states_setting.js
+#	modified:   ShopmeWebParent/ShopmeBackEnd/src/main/resources/templates/navigation.html
+#	modified:   ShopmeWebParent/ShopmeBackEnd/src/main/resources/templates/products/product_overview.html
+#	new file:   ShopmeWebParent/ShopmeBackEnd/src/main/resources/templates/settings/countries.html
+#	modified:   ShopmeWebParent/ShopmeBackEnd/src/main/resources/templates/settings/general.html
+#	modified:   ShopmeWebParent/ShopmeBackEnd/src/main/resources/templates/settings/settings.html
+#	new file:   ShopmeWebParent/ShopmeBackEnd/src/main/resources/templates/settings/states.html
+#	new file:   ShopmeWebParent/ShopmeBackEnd/src/test/java/com/shopme/admin/setting/country/CountryRepositoryTests.java
+#	new file:   ShopmeWebParent/ShopmeBackEnd/src/test/java/com/shopme/admin/setting/country/CountryRestControllerTests.java
+#	new file:   ShopmeWebParent/ShopmeBackEnd/src/test/java/com/shopme/admin/setting/state/StateRepositoryTests.java
+#	new file:   ShopmeWebParent/ShopmeBackEnd/src/test/java/com/shopme/admin/setting/state/StateRestControllerTests.java
+#	new file:   ShopmeWebParent/ShopmeFrontEnd/src/main/java/com/shopme/setting/SettingFilter.java
+#	new file:   ShopmeWebParent/ShopmeFrontEnd/src/main/java/com/shopme/setting/SettingRepository.java
+#	new file:   ShopmeWebParent/ShopmeFrontEnd/src/main/java/com/shopme/setting/SettingService.java
+#	modified:   ShopmeWebParent/ShopmeFrontEnd/src/main/resources/templates/fragments.html
+#	modified:   ShopmeWebParent/ShopmeFrontEnd/src/main/resources/templates/navigation.html
+#	modified:   ShopmeWebParent/ShopmeFrontEnd/src/main/resources/templates/product/product_fragment.html
+#	new file:   ShopmeWebParent/ShopmeFrontEnd/src/test/java/com/shopme/setting/SettingRepositoryTests.java
+#
