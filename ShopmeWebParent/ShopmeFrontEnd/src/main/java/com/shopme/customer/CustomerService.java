@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.shopme.common.entity.AuthenticationType;
 import com.shopme.common.entity.Country;
 import com.shopme.common.entity.Customer;
 import com.shopme.setting.CountryRepository;
@@ -18,7 +19,6 @@ import net.bytebuddy.utility.RandomString;
 @Service
 @Transactional
 public class CustomerService {
-
 	@Autowired private CountryRepository countryRepo;
 	@Autowired private CustomerRepository customerRepo;
 	@Autowired PasswordEncoder passwordEncoder;
@@ -41,22 +41,37 @@ public class CustomerService {
 		customer.setVerificationCode(randomCode);
 		
 		customerRepo.save(customer);
-	}
-
-	private void encodePassword(Customer customer) {
-		String encodePassword = passwordEncoder.encode(customer.getPassword());
-		customer.setPassword(encodePassword);
 		
+	}
+	private void encodePassword(Customer customer) {
+		String encodedPassword = passwordEncoder.encode(customer.getPassword());
+		customer.setPassword(encodedPassword);
 	}
 	
 	public boolean verify(String verificationCode) {
 		Customer customer = customerRepo.findByVerificationCode(verificationCode);
-
+		
 		if (customer == null || customer.isEnabled()) {
 			return false;
 		} else {
 			customerRepo.enable(customer.getId());
 			return true;
 		}
+	}
+
+	public void updateAuthentication(Customer customer, AuthenticationType type) {
+		if (!customer.getAuthenticationType().equals(type)) {
+			customerRepo.updateAuthenticationType(customer.getId(), type);
+		}
+	}
+
+	public Customer getCustomerByEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void update(Customer customer) {
+		// TODO Auto-generated method stub
+		
 	}
 }
